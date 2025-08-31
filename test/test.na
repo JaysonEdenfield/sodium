@@ -1,0 +1,4 @@
+main() // for main(), int return code is implicit, any other function w/out explicit return type has implicit NULL return type
+{
+  return 0; // semicolon based, for now at least, might use ASI later
+}
