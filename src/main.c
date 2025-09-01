@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "dummy.h"
 
 int main()
 {
