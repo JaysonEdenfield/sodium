@@ -1,0 +1,21 @@
+name: "Make file test"
+
+on: [workflow_dispatch, push, pull_request]
+
+jobs:
+ cmake:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+
+   - name: build directory
+     run: mkdir -p build # make the build directory and move to it
+   
+   - name: generate makefiles
+     working-directory: ${{ github.workspace }}/build
+     run: cmake .. # run cmake
+
+   - name: Build with make
+     working-directory: ${{ github.workspace }}/build
+     run: make # if this succeeds we're good
+# short and sweet
