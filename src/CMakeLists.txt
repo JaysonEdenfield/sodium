@@ -1,0 +1,1 @@
+target_sources(na PRIVATE main.c)
