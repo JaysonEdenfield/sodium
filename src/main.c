@@ -2,7 +2,7 @@
 
 int main()
 {
-    printf("Hello from sodium source code!\n");
+    
 
     return 0;
 }
